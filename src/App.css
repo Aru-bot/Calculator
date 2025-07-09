@@ -1,0 +1,106 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #a855f7, #ec4899, #6366f1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.calculator-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.display {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 2rem;
+  font-family: monospace;
+  text-align: right;
+  padding: 16px;
+  border-radius: 16px;
+  min-height: 60px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.digit {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.digit:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.operator {
+  background: rgba(255, 200, 0, 0.3);
+  color: white;
+}
+.operator:hover {
+  background: rgba(255, 200, 0, 0.5);
+}
+
+.clear {
+  background: rgba(239, 68, 68, 0.4);
+  color: white;
+}
+.clear:hover {
+  background: rgba(239, 68, 68, 0.6);
+}
+
+.equals {
+  background: linear-gradient(135deg, #ec4899, #6366f1);
+  color: white;
+}
+.equals:hover {
+  background: linear-gradient(135deg, #f472b6, #8b5cf6);
+}
+
+/* Optional Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
